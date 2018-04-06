@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Fale Conosco</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Robson Anversa">
+    </head>
+    <body>
+        <header>
+            <figure>
+                <img width="200" height="200" border="2px" src="assets/img/01.jpg" title="Tio Bill" alt="Tio Bill"/>
+            </figure>
+            <h1>Robson Anversa</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="curriculum.html">Curriculum Vitae</a>
+                    </li>
+                    <li>
+                        <a href="fale-conosco.html">Fale Conosco</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Ranversa" target="_blank">Meus Projetos</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h2>Fale Conosco</h2>
+            <form>
+                <div>
+                    <label for="name" >Nome:</label>
+                    <input type="text" id="name"required>
+                </div>
+                <div>
+                    <label>Sexo:</label>
+                    <input type="radio" name="sex" value="Masculino">Masculino
+                    <input type="radio" name="sex" value="Femenino">femenino
+                    <input type="radio" name="sex" value="Flex">TotalFlex
+                </div>
+                <div>
+                    <label for="email" >Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div>
+                    <label for="wesite">Website:</label>
+                    <input type="url" id="website">
+                </div>
+                <div>
+                    <label for="phone" >Telefone:</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div>
+                    <label for="city" >Cidade:</label>
+                    <input type="text" id="city" required>
+                </div>
+                <div>
+                    <label for="state" >Estado:</label>
+                    <select  id="state" required>
+                        <option value="RS">RS </option>
+                        <option value="SC">SC </option>
+                        <option value="PR">PR </option>
+                        <option value="SP">SP </option>
+                    </select>
+                </div>
+                <div>
+                    <label for="subject" >Assunto:</label>
+                    <select  id="subject" required>
+                        <option value="sugestao">Sugestão </option>
+                        <option value="critica">Crítica </option>
+                    </select>
+                </div>
+                <div>
+                    <label for="archive">Arquivo</label>
+                    <input type="file" id="archive">
+                </div>
+                <div>
+                    <label for="mensagem">Mensagem:</label>
+                    <br>
+                    <textarea id="mensagem" maxlength="140" cols="30" rows="5" placeholder="Escreva sua mensagem"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Cancelar</button>
+                </div>
+            </form>
+        </section>
+    </body>
+</html>
