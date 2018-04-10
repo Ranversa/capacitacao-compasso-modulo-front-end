@@ -1,0 +1,233 @@
+body{
+    margin: 0;
+    font-size: 14px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+/*Header*/
+.main-header{
+    background: #3c3c3c;
+    float: left;
+    clear: both;
+    width: 100%;
+    border-bottom: 3px solid #000000;
+    margin-bottom: 30px;
+    padding-top: 35px;
+}
+
+.main-header .container-img{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-header .container-img img{
+    width: 200px;
+    height: 200px;
+    border: 3px solid #ffffff;
+}
+.main-header .main-title {
+    font-size: 50px;
+    color: #ffffff;
+    text-align: center;
+    margin: 10px 0 20px;
+    text-transform: uppercase;
+}
+
+/*Headre Menu*/
+
+.menu {
+    background: #2F6DF5;
+    width: 100%;
+    float: left;
+    padding: 15px;
+}
+
+.menu .container-item {
+    padding: 0 50px;
+    list-style: none;
+}
+
+.menu .container-item .item{
+    float: left;
+    width: calc(100% / 3);
+    text-align: center;
+}
+
+.menu .container-item .item a{
+    color: #ffffff;
+    font-size: 25px;
+    text-decoration: none;
+
+}
+
+.menu .container-item .item a:hover{
+    background: #ffffff;
+    color: #2F6DF5;
+
+}
+
+/* sections */
+
+section{
+    float: left;
+    width: 100%;
+    padding: 10px 12.5%;
+
+}
+
+section h3{
+    font-size: 35px;
+    background: #2F6DF5;
+    color: #ffffff;
+    float: left;
+    clear: both;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+section > p, section address, section ul {
+    float: left;
+    width: 100%;
+}
+
+section p, section address{
+    font-size: 14px;
+    margin: 5px 0;
+    padding-left: 10px;
+}
+
+section address{
+    font-style: normal;
+}
+
+section .ul-list{
+    padding: 20px;
+    list-style: none;
+}
+
+section .ul-list li{
+    margin: 10px 0;
+    float: left;
+    width: 100%;
+}
+
+section .ul-list a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px;
+    border: 2px solid #2F6DF5; 
+    float: left;
+    margin-top: 10px;
+}
+
+section .ul-list a:hover{
+    background: #2F6DF5;
+    color: #ffffff;
+}
+
+section .ul-list h4{
+    font-size: 18px;
+    float: left;
+    width: 100%;
+    clear: both;
+    margin-bottom: 10px;
+}
+
+/*footer*/
+.main-footer{
+    float: left;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    background: black;
+    margin-top: 20px;
+}
+
+/*Form*/
+
+.main-form{
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.main-form .title{
+    font-size: 25px;
+    margin: 10px 0 20px;
+}
+
+.main-form .container-text{
+    float: left;
+    clear: both;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.main-form .container-text label{
+    float: left;
+    clear: both;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.main-form .container-text input:not([type=radio]):not([type=file]){
+    float: left;
+    width: 100%;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.main-form .container-text.radio label{
+    float: left;
+    width: auto;
+    margin: 0 10px 0 0;
+    font-size: 16px;
+    clear: none;
+}
+
+.main-form .container-text.radio input {
+    margin-right: 5px;
+}
+
+.main-form .container-text select {
+    width: 250px;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.main-form .container-text textarea {
+    resize: none;
+    width: 100%;
+    border: 2px solid black;
+    font: 400 13.3333px Arial;
+    padding: 10px;
+}
+
+.main-form button {
+    width: 48%;
+    padding: 15px;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.main-form .btn-submit {
+    float: left;
+    background: black;
+    color: #fff;
+}
+
+.main-form .btn-reset {
+    float: right;
+    background: #fff;
+    color: black;
+}
