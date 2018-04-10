@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    font-size: 14px;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+/*Header*/
+.main-header{
+    background: #D6D1D1;
+    float: left;
+    clear: both;
+    width: 100%;
+    border-bottom: 3px solid #111111;
+    margin-bottom: 30px;
+    padding-top: 35px;
+}
+
+.login {
+    background: black;
+    width: 20%;
+    float: right;
+    padding: 15px;
+    margin-right: 10%;
+}
+
+.login .container-login {
+    padding: 0 10px;
+    list-style: none;
+}
+
+.login .container-login .l{
+    float: left;
+    width: calc(100% / 2);
+    text-align: center;
+}
+
+.login .container-login a{
+    color: #ffffff;
+    font-size: 15px;
+    text-decoration: none;
+
+}
+
+.login .container-login a:hover{
+    background: #ffffff;
+    color: black;
+
+}
+
+.menu {
+    background: black;
+    width: 100%;
+    float: bottom;
+    padding: 15px;
+}
+
+.menu .container-item {
+    padding: 0 5px;
+    list-style: none;
+}
+
+.menu .container-item .item{
+    float: left;
+    width: calc(100% / 9);
+    text-align: center;
+}
+
+.menu .container-item .item a{
+    color: #ffffff;
+    font-size: 15px;
+    text-decoration: none;
+
+}
+
+.menu .container-item .item a:hover{
+    background: #ffffff;
+    color: black;
+
+}
