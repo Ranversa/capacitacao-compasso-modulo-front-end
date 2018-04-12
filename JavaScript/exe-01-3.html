@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <label>valor  1  :</label>
+    <input type="text" id="v1"><br>
+    <label>valor  2  :</label>
+    <input type="text" id="v2"><br>
+    <label>resultado:</label>
+    <input type="text" id="result"><br>
+    <a href="#" id="somar">Somar</a>
+    <a href="#" id="limpar">Limpar</a>
+
+    <script>
+        var $v1 = document.getElementById('v1');
+        var $v2 = document.getElementById('v2');
+        var $result = document.getElementById('result');
+        var $somar = document.getElementById('somar');
+        var $limpar = document.getElementById('limpar');
+        
+        $somar.onclick = function(){
+            $result.value = parseInt($v1.value) + parseInt($v2.value);
+        };
+
+        $limpar.onclick = function(){
+            $result.value = ('');
+            $v1.value = ('');
+            $v2.value = ('');
+        };
+
+        $result.ondblclick = function(){
+            $result.value = ('');
+            $v1.value = ('');
+            $v2.value = ('');
+        };
+    </script>
+    
+</body>
+</html>
