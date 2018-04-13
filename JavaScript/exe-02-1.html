@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        #container-resultado{
+            display: none;
+        }
+        #resultado-busca{
+            float: left;
+            background: #dddddd;
+            width: 100%;
+        }
+        .produto{
+            float: left;
+            width: calc(100% / 3);
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="" class="js-teste" id="frm-busca">
+        <input type="search" id="campo-busca">
+    </form>
+    <div id="container-resultado">
+        <h2>Resultado de busca</h2>
+        <div id="sugestoes-produtos"><p>sugestoes</p></div>
+        <div id="resultado-busca"><p>resultado</p></div>
+    </div>
+
+    <script>
+        "use strict" // obriga a inicializar todas as variaveis
+
+        var $debug = true;
+
+        var $campo_busca = document.getElementById('campo-busca');
+        var $container_resultado = document.getElementById('container-resultado');
+        var $sugestoes_produtos = document.getElementById('sugestoes-produtos');
+        var $resultado_busca = document.getElementById('resultado-busca');
+
+        var $ar_sugestoes_produtos = [
+            "Detergente",
+            "Café",
+            "Erva",
+            "Cerveja"
+        ];
+
+        var $ar_resultado_busca = [
+            {
+                "nome" : "Computador Dell",
+                "descricao" : "processador intel i7 8GB RAM",
+                "img" : null,
+                "link" : "http://compasso.com.br",
+                "preco" : "2649.99"
+            },
+            {
+                "nome" : "Notebook HP",
+                "descricao" : "processador intel i7 8GB RAM",
+                "img" : null,
+                "link" : "http://compasso.com.br",
+                "preco" : "3949.99"
+            },
+            {
+                "nome" : "Notebook ASUS",
+                "descricao" : "processador intel i5 4GB RAM",
+                "img" : null,
+                "link" : "http://compasso.com.br",
+                "preco" : "2949.99"
+            }
+        ];
+
+        cl($ar_resultado_busca);
+
+        function renderizaSugestoes(){
+            var $retorno = "";
+            for(var $i =0; $i < $ar_sugestoes_produtos.length; $i++){
+
+               // cl($ar_sugestoes_produtos[$i]);
+
+                $retorno += "<p>" + $ar_sugestoes_produtos[$i] + "</p>";
+
+                cl($retorno);
+            };
+
+            $sugestoes_produtos.innerHTML = $retorno;
+        };
+
+        function renderizaResultadoBusca(){
+            var $retorno = "";
+            for(var $i =0; $i < $ar_resultado_busca.length; $i++){
+
+               // cl($ar_resultado_busca[$i]);
+
+                $retorno += "<div class='produto'>"+
+                            "<h3>"+$ar_resultado_busca[$i].nome+"</h3>"+
+                            "<p>"+$ar_resultado_busca[$i].descricao+"</p>"+
+                            "<img src='"+$ar_resultado_busca[$i].img+"'>"+
+                            "<a href='"+$ar_resultado_busca[$i].link+"'>Veja mais</a>"+
+                            "<p>"+$ar_resultado_busca[$i].preco+"</p>"+
+                            "<br>"+
+                            "</div>";
+
+                cl($retorno);
+            };
+
+            $resultado_busca.innerHTML = $retorno;
+        };
+
+        renderizaSugestoes();
+        renderizaResultadoBusca();
+
+        function cl($msg){
+            if($debug) console.log($msg);
+        }
+
+        $campo_busca.onfocus = function(){
+            cl('Entrou no campo');
+            $container_resultado.style.display = "block";
+
+            if(this.value.length === 0){
+                $sugestoes_produtos.style.display = "block";
+                $resultado_busca.style.display = "none";
+            }else{
+                $sugestoes_produtos.style.display = "none";
+                $resultado_busca.style.display = "block";
+            }
+        };
+
+        $campo_busca.onblur = function(){
+            cl('Saiu do campo');
+            if(this.value.length === 0)
+            $container_resultado.style.display = "none";
+        };
+
+        $campo_busca.onkeyup = function(){
+            if(this.value.length === 0){
+                $sugestoes_produtos.style.display = "block";
+                $resultado_busca.style.display = "none";
+            }else{
+                $sugestoes_produtos.style.display = "none";
+                $resultado_busca.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
