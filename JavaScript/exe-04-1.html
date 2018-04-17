@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .hide{
+            display: none;
+        }
+    
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <label>CEP:</label>
+        <input type="text" id="txt_cep" autofocus maxlength="8">
+        <span class="hide">Pesquisando...</span><br>
+        <label>Logradouro: </label>
+        <input type="text" id="txt_logradouro" disabled><br>
+        <label>Bairro: </label>
+        <input type="text" id="txt_bairro" disabled><br>
+        <label>Localidade: </label>
+        <input type="text" id="txt_localidade" disabled><br>
+        <label>UF: </label>
+        <input type="text" id="txt_uf" disabled><br>
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="jquery.maskedinput.min.js"></script>
+    <script src="exe-04-1.js"></script>
+   
+   
+</body>
+
+</html>
