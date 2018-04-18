@@ -1,0 +1,233 @@
+body{
+    margin: 0;
+    font-size: 14px;
+    background: #eeeeee;
+    width: 95%;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+/*Header*/
+.main-header{
+    float: left;
+    clear: both;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 0 40px;
+}
+
+.login {
+    display: block;
+    width: 100%;
+    float: left;
+    padding: 0;
+}
+
+.login .container-login {
+    padding: 0 20px;
+    width: 202px;  
+    height: 35px;
+    background: black;
+    float: right;
+    list-style: none;
+}
+
+.login .container-login .l{
+    float: left;
+    text-align: center;
+    padding: 10px;
+}
+
+.login .container-login a{
+    color: #ffffff;
+    font-size: 15px;
+    text-decoration: none;
+
+}
+
+.login .container-login a:hover{
+    background: #ffffff;
+    color: black;
+
+}
+
+.logo{
+    float: left;;
+    padding: 0px;
+}
+
+.logo .container-img{
+    float: left;
+}
+
+.logo .container-img img{
+    width: 200px;
+    height: 150px;
+}
+
+.main-header form{
+    margin-top: 70px;
+    float: right;
+    width: 70%;
+}
+
+.main-header form input{
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+
+.pesquisa{
+    z-index: 1;
+}
+.pesquisa #sugestoes{
+    width: 70%;
+    height: 500px;
+    border: 1px solid black;
+    background: #ffffff;
+    position: absolute;
+}
+
+.pesquisa #box{
+    width: 70%;
+    height: 500px;
+    border: 1px solid black;
+    background: #f0f0f0;
+    position: absolute;
+}
+
+.hide{
+    display: none;
+}
+
+.menu {
+    background: black;
+    width: 100%;
+    height: 45px;
+    float: right;
+    padding: 0 40px;
+}
+
+.menu .container-item {
+    padding: 0 5px;
+    list-style: none;
+}
+
+.menu .container-item .item{
+    float: left;
+    width: 9.5%;
+    text-align: center;
+}
+
+.menu .container-item .item a{
+    color: #ffffff;
+    font-size: 15px;
+    text-decoration: none;
+
+}
+
+.menu .container-item .item a:hover{
+    background: #ffffff;
+    color: black;
+
+}
+
+/*sections */
+section{
+    float: left;
+    width: 100%;
+    padding: 0 40px;
+}
+
+/*Slides*/
+section .main-slides{
+    width: 60%;
+    margin: 0 20%;
+    height: 520px;
+    z-index: -1;
+}
+
+.main-slides img{
+    width: 100%;
+    height: 500px;
+    border: 2px solid black;
+    
+}
+
+section h1 {
+    text-align: left;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    float: left;
+    width: 100%;
+    padding: 15px;
+}
+
+.produto{
+    float: left;
+    width: 33%;
+    height: auto;
+}
+
+.produto .container-img img{
+    width: 250px;
+    width: 250px;
+}
+
+.produto span{
+    color: red;
+}
+
+/*footer*/
+
+.main-footer{
+    float: left;
+    width: 100%;
+    background: #d9d9d9;
+    padding: 20px 20px;
+}
+
+.main-footer .links{
+    float: left;
+    width: calc(100% /3);
+}
+.main-footer .links .nav{
+    float: left;
+    width: 100%;
+}
+
+.main-footer .links .nav ul{
+    list-style: none;
+}
+
+.main-footer .links .nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.main-footer h3{
+    background: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    float: left;
+}
+
+.main-bottom div ul{
+    list-style-type: none;
+    list-style: none;
+}
+
+.main-footer .links .main-bottom-social li a figure{
+    float: left;
+    margin-right: 20px;
+}
+
+.main-footer .links .main-bottom-social li a figure img{
+    width: 80%;
+}
